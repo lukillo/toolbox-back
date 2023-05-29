@@ -19,7 +19,6 @@ const getSingleFile = async (fileName)=> {
         throw { statusCode: response.status, error: "Request failed" };
       
       const fileContent = response.data;
-
       return fileContent;
 }
 
@@ -96,4 +95,5 @@ const getFilesData = async () => {
 
 module.exports = {
     getFilesData,
+    getSingleFile
 };
